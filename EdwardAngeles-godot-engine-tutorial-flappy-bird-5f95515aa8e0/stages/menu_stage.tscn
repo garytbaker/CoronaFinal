@@ -1,0 +1,133 @@
+[gd_scene load_steps=13 format=1]
+
+[ext_resource path="res://scripts/camera.gd" type="Script" id=1]
+[ext_resource path="res://scenes/bird.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/spawner_ground.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/background.tscn" type="PackedScene" id=4]
+[ext_resource path="res://sprites/label_flappy_bird.png" type="Texture" id=5]
+[ext_resource path="res://sprites/button_rate_normal.png" type="Texture" id=6]
+[ext_resource path="res://sprites/button_rate_pressed.png" type="Texture" id=7]
+[ext_resource path="res://sprites/button_play_normal.png" type="Texture" id=8]
+[ext_resource path="res://sprites/button_play_pressed.png" type="Texture" id=9]
+[ext_resource path="res://sprites/button_score_normal.png" type="Texture" id=10]
+[ext_resource path="res://sprites/button_score_pressed.png" type="Texture" id=11]
+
+[sub_resource type="GDScript" id=1]
+
+resource/name = "btn_play"
+script/source = "# script: btn_play (built-in)\n\nextends TextureButton\n\nfunc _ready():\n\tconnect(\"pressed\", self, \"_on_pressed\")\n\tpass\n\nfunc _on_pressed():\n\tstage_manager.change_stage(stage_manager.STAGE_GAME)\n\tpass\n\n"
+
+[node name="main_menu" type="Node"]
+
+[node name="camera" type="Camera2D" parent="."]
+
+offset = Vector2( -72, 0 )
+anchor_mode = 0
+rotating = false
+current = true
+zoom = Vector2( 1, 1 )
+limit/left = -10000000
+limit/top = -10000000
+limit/right = 10000000
+limit/bottom = 10000000
+drag_margin/h_enabled = true
+drag_margin/v_enabled = true
+smoothing/enable = false
+smoothing/speed = 5.0
+drag_margin/left = 0.2
+drag_margin/top = 0.2
+drag_margin/right = 0.2
+drag_margin/bottom = 0.2
+script/script = ExtResource( 1 )
+
+[node name="bird" parent="." instance=ExtResource( 2 )]
+
+transform/pos = Vector2( 72, 110 )
+
+[node name="spawner_ground" parent="." instance=ExtResource( 3 )]
+
+[node name="background" parent="." instance=ExtResource( 4 )]
+
+[node name="hud" type="CanvasLayer" parent="."]
+
+layer = 1
+offset = Vector2( 0, 0 )
+rotation = 0.0
+scale = Vector2( 1, 1 )
+
+[node name="tex_flappybird" type="TextureFrame" parent="hud"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 28.0
+margin/top = 70.0
+margin/right = 117.0
+margin/bottom = 94.0
+texture = ExtResource( 5 )
+stretch_mode = 0
+
+[node name="btn_rate" type="TextureButton" parent="hud"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 57.0
+margin/top = 135.0
+margin/right = 88.0
+margin/bottom = 153.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+textures/normal = ExtResource( 6 )
+textures/pressed = ExtResource( 7 )
+
+[node name="hbox_buttons" type="HBoxContainer" parent="hud"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 16.0
+margin/top = 160.0
+margin/right = 129.0
+margin/bottom = 189.0
+custom_constants/separation = 9
+alignment = 1
+
+[node name="btn_play" type="TextureButton" parent="hud/hbox_buttons"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 52.0
+margin/bottom = 29.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+textures/normal = ExtResource( 8 )
+textures/pressed = ExtResource( 9 )
+script/script = SubResource( 1 )
+
+[node name="btn_scores" type="TextureButton" parent="hud/hbox_buttons"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 61.0
+margin/top = 0.0
+margin/right = 113.0
+margin/bottom = 29.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+textures/normal = ExtResource( 10 )
+textures/pressed = ExtResource( 11 )
+
+
