@@ -1,7 +1,9 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Scripts/Game_Over.gd" type="Script" id=1]
 [ext_resource path="res://Assets/1920x1080-gold-metallic-solid-color-background.jpg" type="Texture" id=2]
+[ext_resource path="res://Assets/BGM.wav" type="AudioStream" id=3]
+[ext_resource path="res://Assets/clap.wav" type="AudioStream" id=4]
 
 [sub_resource type="Gradient" id=1]
 offsets = PoolRealArray( 0, 0.618519 )
@@ -82,5 +84,15 @@ lifetime = 4.0
 speed_scale = 0.5
 randomness = 1.0
 process_material = SubResource( 3 )
+
+[node name="backgroundmusic" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+volume_db = -5.0
+autoplay = true
+
+[node name="clap" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+volume_db = 13.0
+autoplay = true
 [connection signal="pressed" from="Control/VBoxContainer/Try again" to="." method="_on_Try_again_pressed"]
 [connection signal="pressed" from="Control/VBoxContainer/Quit" to="." method="_on_Quit_pressed"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://Node2D.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Handtwo.png.png" type="Texture" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://Assets/Limesheet.png" type="Texture" id=6]
 [ext_resource path="res://Assets/1920x1080-gold-metallic-solid-color-background.jpg" type="Texture" id=7]
 [ext_resource path="res://Scripts/background.gd" type="Script" id=8]
+[ext_resource path="res://Assets/BGM.wav" type="AudioStream" id=9]
 
 [sub_resource type="AtlasTexture" id=1]
 flags = 4
@@ -158,7 +159,6 @@ __meta__ = {
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Limes/Lime"]
 scale = Vector2( 0.3, 0.3 )
 frames = SubResource( 5 )
-frame = 3
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Limes/Lime"]
@@ -176,7 +176,6 @@ __meta__ = {
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Limes/Lime2"]
 scale = Vector2( 0.3, 0.3 )
 frames = SubResource( 5 )
-frame = 3
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Limes/Lime2"]
@@ -194,7 +193,6 @@ __meta__ = {
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Limes/Lime3"]
 scale = Vector2( 0.3, 0.3 )
 frames = SubResource( 5 )
-frame = 3
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Limes/Lime3"]
@@ -212,7 +210,6 @@ __meta__ = {
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Limes/Lime4"]
 scale = Vector2( 0.3, 0.3 )
 frames = SubResource( 5 )
-frame = 3
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Limes/Lime4"]
@@ -290,3 +287,8 @@ z_index = -100
 z_as_relative = false
 texture = ExtResource( 7 )
 script = ExtResource( 8 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 9 )
+volume_db = -5.0
+autoplay = true
