@@ -23,7 +23,7 @@ func _physics_process(delta):
 	motion = move_and_slide(motion,UP)
 	for i in get_slide_count():
 		var collision = get_slide_collision(i)
-		if (collision.collider.get_parent().name == "Hands" or collision.collider.name == "Floor"):
+		if (collision.collider.get_parent().name == "Hands" or collision.collider.get_parent().name == "Floor"):
 			die()
 		elif (collision.collider.name == "Mouth"):
 			win()
