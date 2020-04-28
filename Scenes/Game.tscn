@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://Node2D.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Handtwo.png.png" type="Texture" id=2]
@@ -6,6 +6,8 @@
 [ext_resource path="res://Assets/Mouth.png" type="Texture" id=4]
 [ext_resource path="res://Assets/Floor.png" type="Texture" id=5]
 [ext_resource path="res://Assets/Limesheet.png" type="Texture" id=6]
+[ext_resource path="res://Assets/1920x1080-gold-metallic-solid-color-background.jpg" type="Texture" id=7]
+[ext_resource path="res://Scripts/background.gd" type="Script" id=8]
 
 [sub_resource type="AtlasTexture" id=1]
 flags = 4
@@ -40,8 +42,6 @@ animations = [ {
 [node name="Game" type="Node2D"]
 position = Vector2( 0, -4 )
 script = ExtResource( 1 )
-
-[node name="Background" type="Sprite" parent="."]
 
 [node name="Hands" type="Node2D" parent="."]
 
@@ -158,7 +158,7 @@ __meta__ = {
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Limes/Lime"]
 scale = Vector2( 0.3, 0.3 )
 frames = SubResource( 5 )
-frame = 2
+frame = 3
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Limes/Lime"]
@@ -176,7 +176,7 @@ __meta__ = {
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Limes/Lime2"]
 scale = Vector2( 0.3, 0.3 )
 frames = SubResource( 5 )
-frame = 2
+frame = 3
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Limes/Lime2"]
@@ -194,7 +194,7 @@ __meta__ = {
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Limes/Lime3"]
 scale = Vector2( 0.3, 0.3 )
 frames = SubResource( 5 )
-frame = 2
+frame = 3
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Limes/Lime3"]
@@ -212,7 +212,7 @@ __meta__ = {
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Limes/Lime4"]
 scale = Vector2( 0.3, 0.3 )
 frames = SubResource( 5 )
-frame = 2
+frame = 3
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Limes/Lime4"]
@@ -282,3 +282,11 @@ text = "SCORE: "
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="background" type="Sprite" parent="."]
+position = Vector2( 0, 290 )
+scale = Vector2( 0.684434, 0.684434 )
+z_index = -100
+z_as_relative = false
+texture = ExtResource( 7 )
+script = ExtResource( 8 )

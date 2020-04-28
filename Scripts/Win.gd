@@ -7,4 +7,4 @@ func _on_Play_Again_pressed():
 
 
 func _on_Quit_pressed():
-	get_tree().quit
+	get_tree().quit()
