@@ -1,8 +1,41 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://Node2D.gd" type="Script" id=1]
 [ext_resource path="res://icon.png" type="Texture" id=2]
 [ext_resource path="res://Scripts/Floor.gd" type="Script" id=3]
+[ext_resource path="res://Assets/Mouth.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Floor.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Limesheet.png" type="Texture" id=6]
+
+[sub_resource type="AtlasTexture" id=1]
+flags = 4
+atlas = ExtResource( 6 )
+region = Rect2( 0, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=2]
+flags = 4
+atlas = ExtResource( 6 )
+region = Rect2( 256, 256, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=3]
+flags = 4
+atlas = ExtResource( 6 )
+region = Rect2( 0, 256, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=4]
+flags = 4
+atlas = ExtResource( 6 )
+region = Rect2( 256, 0, 256, 256 )
+
+[sub_resource type="SpriteFrames" id=5]
+animations = [ {
+"frames": [ SubResource( 1 ), SubResource( 2 ), SubResource( 3 ), SubResource( 4 ) ],
+"loop": true,
+"name": "default",
+"speed": 4.0
+} ]
+
+[sub_resource type="CircleShape2D" id=6]
 
 [node name="Game" type="Node2D"]
 position = Vector2( 0, -4 )
@@ -127,105 +160,128 @@ polygon = PoolVector2Array( 32, -32, 32, 32, -32, 32, -32, -32, 31, -32 )
 [node name="Limes" type="Node2D" parent="."]
 
 [node name="Lime" type="StaticBody2D" parent="Limes"]
-position = Vector2( 378.629, 406.992 )
+position = Vector2( 388.968, 319.112 )
 __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Sprite" type="Sprite" parent="Limes/Lime"]
-position = Vector2( -8.16223, -129.236 )
-texture = ExtResource( 2 )
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Limes/Lime"]
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Limes/Lime"]
-position = Vector2( -8.16223, -129.236 )
-polygon = PoolVector2Array( 32, -32, 32, 32, -32, 32, -32, -32, 31, -32 )
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Limes/Lime"]
+scale = Vector2( 0.3, 0.3 )
+frames = SubResource( 5 )
+frame = 3
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Limes/Lime"]
+scale = Vector2( 2, 4 )
+shape = SubResource( 6 )
 
 [node name="Lime2" type="StaticBody2D" parent="Limes"]
-position = Vector2( 673.83, 405.632 )
+position = Vector2( 809.058, 196.971 )
 __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Sprite" type="Sprite" parent="Limes/Lime2"]
-position = Vector2( -8.16223, -129.236 )
-texture = ExtResource( 2 )
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Limes/Lime2"]
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Limes/Lime2"]
-position = Vector2( -8.16223, -129.236 )
-polygon = PoolVector2Array( 32, -32, 32, 32, -32, 32, -32, -32, 31, -32 )
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Limes/Lime2"]
+scale = Vector2( 0.3, 0.3 )
+frames = SubResource( 5 )
+frame = 3
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Limes/Lime2"]
+scale = Vector2( 2, 4 )
+shape = SubResource( 6 )
 
 [node name="Lime3" type="StaticBody2D" parent="Limes"]
-position = Vector2( 1144.52, 518.543 )
+position = Vector2( 1132.92, 387.585 )
 __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Sprite" type="Sprite" parent="Limes/Lime3"]
-position = Vector2( -8.16223, -129.236 )
-texture = ExtResource( 2 )
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Limes/Lime3"]
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Limes/Lime3"]
-position = Vector2( -8.16223, -129.236 )
-polygon = PoolVector2Array( 32, -32, 32, 32, -32, 32, -32, -32, 31, -32 )
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Limes/Lime3"]
+scale = Vector2( 0.3, 0.3 )
+frames = SubResource( 5 )
+frame = 3
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Limes/Lime3"]
+scale = Vector2( 2, 4 )
+shape = SubResource( 6 )
 
 [node name="Lime4" type="StaticBody2D" parent="Limes"]
-position = Vector2( 1487.33, 337.613 )
+position = Vector2( 1553.01, 171.062 )
 __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Sprite" type="Sprite" parent="Limes/Lime4"]
-position = Vector2( -8.16223, -129.236 )
-texture = ExtResource( 2 )
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Limes/Lime4"]
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Limes/Lime4"]
-position = Vector2( -8.16223, -129.236 )
-polygon = PoolVector2Array( 32, -32, 32, 32, -32, 32, -32, -32, 31, -32 )
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Limes/Lime4"]
+scale = Vector2( 0.3, 0.3 )
+frames = SubResource( 5 )
+frame = 3
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Limes/Lime4"]
+scale = Vector2( 2, 4 )
+shape = SubResource( 6 )
 
 [node name="Mouth" type="Node2D" parent="."]
 position = Vector2( 865.198, -1.36038 )
 
 [node name="Mouth" type="StaticBody2D" parent="Mouth"]
-position = Vector2( 1024.83, 293.432 )
+position = Vector2( 1297.61, 496.039 )
 __meta__ = {
 "_edit_group_": true
 }
 
 [node name="Sprite" type="Sprite" parent="Mouth/Mouth"]
 position = Vector2( 0, -208.31 )
-scale = Vector2( 1, 15 )
-texture = ExtResource( 2 )
+scale = Vector2( 0.52, 0.52 )
+texture = ExtResource( 4 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Mouth/Mouth"]
 position = Vector2( 0, -208.31 )
-scale = Vector2( 1, 15 )
-polygon = PoolVector2Array( 32, -32, 32, 32, -32, 32, -32, -32, 31, -32 )
+scale = Vector2( 0.52, 0.52 )
+polygon = PoolVector2Array( -176, -382, -272, -380, -272, -383, -274, -506, -332, -506, -332, -556, 334, -554, 334, 548, -316, 548, -316, 502.1, -274, 500.1, -274, 377.2, -270.8, 374, -224, 374, -224, 373, -226.1, 334, -223, 334, 104, 332, 104, -380, 16, -380, 15, -435, 14, -380, -79.9, -380, -80, -382, -176, -380 )
 
 [node name="Floor" type="Node2D" parent="."]
 
 [node name="Floor" type="KinematicBody2D" parent="Floor"]
-position = Vector2( 0, 600 )
+position = Vector2( 7.40247, 612.734 )
 script = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="Sprite" type="Sprite" parent="Floor/Floor"]
 scale = Vector2( 50, 1 )
-texture = ExtResource( 2 )
+texture = ExtResource( 5 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Floor/Floor"]
+position = Vector2( 0, -2 )
 scale = Vector2( 50, 1 )
-polygon = PoolVector2Array( 32, -32, 32, 32, -32, 32, -32, -32, 31, -32 )
+polygon = PoolVector2Array( 1500, 36, -1500, 36, -1500, -36, 1500, -36 )
 
 [node name="Floor2" type="KinematicBody2D" parent="Floor"]
-position = Vector2( 0, -44.6125 )
+position = Vector2( -3.70129, -41.0333 )
 script = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="Sprite" type="Sprite" parent="Floor/Floor2"]
 scale = Vector2( 50, 1 )
-texture = ExtResource( 2 )
+texture = ExtResource( 5 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Floor/Floor2"]
 scale = Vector2( 50, 1 )
-polygon = PoolVector2Array( 32, -32, 32, 32, -32, 32, -32, -32, 31, -32 )
+polygon = PoolVector2Array( 1500, 36, -1500, 36, -1500, -36, 1500, -36 )
 
 [node name="HUD" type="CanvasLayer" parent="."]
 
