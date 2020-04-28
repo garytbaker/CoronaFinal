@@ -80,13 +80,17 @@ animations = [ {
 extents = Vector2( 38, 27 )
 
 [node name="CoronaBottle" type="Node2D"]
+position = Vector2( 7, 360 )
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="Corona" type="KinematicBody2D" parent="."]
 script = ExtResource( 2 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Corona"]
 frames = SubResource( 14 )
-frame = 5
+frame = 3
 playing = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Corona"]
@@ -96,6 +100,7 @@ position = Vector2( -11, 5 )
 shape = SubResource( 15 )
 
 [node name="Camera2D" type="Camera2D" parent="Corona"]
+rotating = true
 current = true
 limit_top = 0
 limit_bottom = 0

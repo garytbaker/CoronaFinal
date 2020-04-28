@@ -16,8 +16,13 @@ _global_script_class_icons={
 [application]
 
 config/name="Template"
-run/main_scene="res://Scenes/Game.tscn"
+run/main_scene="res://Scenes/Start Menu.tscn"
 config/icon="res://icon.png"
+
+[display]
+
+window/stretch/mode="viewport"
+window/stretch/aspect="keep"
 
 [rendering]
 
