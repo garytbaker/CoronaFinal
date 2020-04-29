@@ -1,9 +1,10 @@
 # Flappy Beer
+![](Assets/FlappyBeer_Thumbnail.png)
 ## by Tipsy Productions 
 ### For BL-MSCH-C220 at Indiana University, Bloomington
 ### April 29, 2020
 
-![](Assets/FlappyBeer_Thumbnail.png)
+
 ![](FlappyBeerGif.gif)
 ---
 
