@@ -4,6 +4,7 @@
 ### April 29, 2020
 
 ![](Assets/FlappyBeer_Thumbnail.png)
+![](FlappyBeerGif.gif)
 ---
 
 This game was developed as a final project for C220 as part of a 48-hour game jam. 
