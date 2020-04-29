@@ -1,0 +1,47 @@
+Name: Katelyn Clemow
+Date: 4/29/2020
+
+Project: Corona Final
+Group's repository: https://github.com/garytbaker/CoronaFinal/
+
+
+
+What is something you learned by reviewing this group's project?
+Most obviously, I learned about what this group thinks college kids will appreciate, and they were pretty on point. I also didn't notice that the tokens were limes until going through the README. I thought that was a nice added touch to the overall theme. I also learned that scenes must be loaded as nodes prior to instancing them. 
+ 
+
+In what ways does this game reflect the theme?
+The game decided to go with the route of Corona beer as opposed to the corona virus which I appreciate as it is less obvious to the times. 
+ 
+
+What is something you saw in this group's project that you would like to apply to your own future games?
+I enjoyed the particles that appear when the player loses. It makes for a nice transition and added interest. 
+ 
+
+What suggestions would you have for this group to improve the game?
+I may just be bad at the game, but maybe apply a more intense gravity or less intense jump for the beer object because I couldn't get very far into the game due to the floatiness.
+ 
+
+Was there anything in the GDScript that was confusing to you? If so, what?
+I may not be the person to ask about the most simplified version of Script, but from what I can tell this group kept it straight forward and the GDScript makes sense. 
+ 
+
+Is it clear that every group member participated?
+Yes! All of the members responsibilities are evident in the game play. 
+ 
+
+Does the repository contain an appropriate LICENSE?
+Yes
+ 
+
+What is something the group could add to the README.md to make it more descriptive?
+Overall, I got everything I needed from the README and was left with no questions. I understand the Corona reference but some may not know that Corona is a beer brand so that may be added. 
+ 
+
+Pay a compliment to the group based on the quality of the game.
+The game is overall great! There are no major errors that restrict the player from playing, the art is simple yet straight forward and there are some added features like particles, the spinning limes, and music. 
+
+
+How many of your points would you allocate to this project?
+3
+
