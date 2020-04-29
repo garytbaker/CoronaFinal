@@ -9,9 +9,9 @@ This game was developed as a final project for C220 as part of a 48-hour game ja
 
 When we considered the theme of Corona, we thought about it this way: 
 
-These are the struggles and surprises we encountered as we developed it:
+These are the struggles and surprises we encountered as we developed it: Team's Sprite artist 
 
-These are the technologies and resources we used: Godot 3.2, V.S Code, GitHub, Piskel
+These are the technologies and resources we used: Godot 3.2, V.S Code, GitHub, Piskel, http://www.solidbackgrounds.com/, https://freesvg.org/
 
 This is the objective of the game: 'Flap' through the hands to get into the mouth of your owner, collect limes to make your drink extra tasty
 
