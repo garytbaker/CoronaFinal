@@ -34,4 +34,4 @@ Team Members
   * Jae-Kyu Park
     * Sounds effects and music
   * Harrison Hinkle
-     * Art/sprites
+     * Made all sprite assets using Piskel and used licence free images for to make the background 
