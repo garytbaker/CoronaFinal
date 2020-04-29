@@ -11,7 +11,7 @@ When we considered the theme of Corona, we thought about it this way: The first 
 
 These are the struggles and surprises we encountered as we developed it: Team's Sprite artist 
 
-These are the technologies and resources we used: Godot 3.2, V.S Code, GitHub, Piskel, http://www.solidbackgrounds.com/, https://freesvg.org/, docs.godotengine.org
+These are the technologies and resources we used: Godot 3.2, V.S Code, GitHub, Piskel, https://freesvg.org/, docs.godotengine.org
 
 This is the objective of the game: 'Flap' through the hands to get into the mouth of your owner, collect limes to make your drink extra tasty
 
