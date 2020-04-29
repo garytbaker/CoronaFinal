@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Scripts/Win.gd" type="Script" id=1]
 [ext_resource path="res://Assets/1920x1080-gold-metallic-solid-color-background.jpg" type="Texture" id=2]
 [ext_resource path="res://Assets/BGM.wav" type="AudioStream" id=3]
+[ext_resource path="res://Scripts/AudioStreamPlayer.gd" type="Script" id=4]
 
 [node name="Win Menu" type="Node2D"]
 script = ExtResource( 1 )
@@ -52,5 +53,6 @@ text = "Quit"
 stream = ExtResource( 3 )
 volume_db = -5.0
 autoplay = true
+script = ExtResource( 4 )
 [connection signal="pressed" from="CenterContainer/VBoxContainer/Play_Again" to="." method="_on_Play_Again_pressed"]
 [connection signal="pressed" from="CenterContainer/VBoxContainer/Quit" to="." method="_on_Quit_pressed"]
