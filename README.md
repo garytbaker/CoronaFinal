@@ -1,4 +1,4 @@
-# Project Name
+# Flappy Beer
 ## by Tipsy Productions 
 ### For BL-MSCH-C220 at Indiana University, Bloomington
 ### April 29, 2020
@@ -23,11 +23,11 @@ Future plans:
 
 Team Members
 
-  * Member 1
-    * Contributions
-  * Member 2
-    * Contributions
-  * Member 3
-    * Contributions
+  * Gary Baker
+    * Programming
+  * Omar Mohammed
+    * Programming 
+  * Jae-Kyu Park
+    * Sounds effects and music
   * Harrison Hinkle
      * lead artist, made all sprites
