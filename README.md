@@ -17,7 +17,7 @@ This is the objective of the game: 'Flap' through the hands to get into the mout
 
 This is how the game is played: Select the quit option in the start menu to quit and start in the start menu to start the game. Once the game is started use the space bar, enter key, or the A button on an Xbox controller to jump your drink dodging the hands to get to the mouth. Whether you die or win you will get the options to play again or quit
 
-Future plans: Adding more levels, and adding the ability to save your score.
+Future plans: Adding more levels, add a rocking motion to the camera when you collect limes, and adding the ability to save your score.
 
 ---
 
