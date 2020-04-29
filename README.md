@@ -30,4 +30,4 @@ Team Members
   * Member 3
     * Contributions
   * Harrison Hinkle
-     * lead artist, made all assets
+     * lead artist, made all sprites
