@@ -30,4 +30,4 @@ Team Members
   * Jae-Kyu Park
     * Sounds effects and music
   * Harrison Hinkle
-     * lead artist, made all sprites
+     * art/sprites
