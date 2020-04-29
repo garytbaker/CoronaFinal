@@ -4,9 +4,6 @@
 ### April 29, 2020
 
 ![](Assets/FlappyBeer_Thumbnail.png)
-<video poster="Assets/FlappyBeer_Thumbnail.png" width="618" height="347" controls preload> 
-    <source src="=FlappyBeerVideo.mp4" media="only screen and (min-device-width: 568px)"></source>
-</video>
 ---
 
 This game was developed as a final project for C220 as part of a 48-hour game jam. 
