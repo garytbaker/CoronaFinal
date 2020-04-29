@@ -21,7 +21,7 @@ Future plans:
 
 ---
 
-###Team Members
+Team Members
 
   * Member 1
     * Contributions
