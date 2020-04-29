@@ -28,9 +28,9 @@ Future plans: Adding more levels, add a rocking motion to the camera when you co
 Team Members
 
   * Gary Baker
-    * Programming
+    * Physics programming and art/sound Integration
   * Omar Mohammed
-    * Programming 
+    * Menu Programming
   * Jae-Kyu Park
     * Sounds effects and music
   * Harrison Hinkle
