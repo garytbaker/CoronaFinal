@@ -29,5 +29,5 @@ Future plans:
     * Contributions
   * Member 3
     * Contributions
-  *Harrison Hinkle
+  * Harrison Hinkle
      * lead artist, made all assets
