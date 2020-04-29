@@ -9,7 +9,7 @@ This game was developed as a final project for C220 as part of a 48-hour game ja
 
 When we considered the theme of Corona, we thought about it this way: The first and most obvios was the virus going about, but we also thought about our audience for the game, College Students. With this in mid, we thought about what they might think, and the answer was easy, Beer, particulary cold and with a lime.
 
-These are the struggles and surprises we encountered as we developed it: Team's Sprite artist 
+These are the struggles and surprises we encountered as we developed it: Team's Sprite artist had trouble making the hand sprite
 
 These are the technologies and resources we used: Godot 3.2, V.S Code, GitHub, Piskel, https://freesvg.org/, docs.godotengine.org
 
