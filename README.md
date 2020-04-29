@@ -4,6 +4,9 @@
 ### April 29, 2020
 
 ![](Assets/FlappyBeer_Thumbnail.png)
+
+
+
 <video poster="Assets/FlappyBeer_Thumbnail.png" width="618" height="347" controls preload> 
     <source src="=FlappyBeerVideo.mp4" media="only screen and (min-device-width: 568px)"></source>
 </video>
