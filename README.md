@@ -11,6 +11,8 @@ When we considered the theme of Corona, we thought about it this way: The first 
 
 These are the struggles and surprises we encountered as we developed it: Team's sprite artist had trouble making the hand sprite
 
+We had some problems with getting the score to display on the HUD. The problem was because we were instancing the player scene and it was not read because it would give a null pointer error. This was fixed by making sure the scene was loaded in as a node before we called to it. We also had some trouble getting the background music to loop using the prebuilt looping in Godot, this was solved with a simple Script. We tried to imlement a rocking camera motion when a lime was picked up, but that proved to be out of our skill range for the small amount of time we were given.
+
 These are the technologies and resources we used: Godot 3.2, V.S Code, GitHub, Piskel, https://freesvg.org/, docs.godotengine.org
 
 This is the objective of the game: 'Flap' through the hands to get into the mouth of your owner, collect limes to make your drink extra tasty
