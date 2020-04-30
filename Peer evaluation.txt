@@ -1,0 +1,21 @@
+
+Name: Hileman
+Date: 4/29/2020
+Project: flappy beer
+Group's repository: https://github.com/garytbaker/CoronaFinal/
+What is something you learned by reviewing this group's project? The theme Corona could be taken in more than just the virus
+In what ways does this game reflect the theme? It's centered around the beer "Corona"
+What is something you saw in this group's project that you would like to apply to your own future games? Having multiple programmers on a team.
+What suggestions would you have for this group to improve the game? When making a difficult game, there's a very fine line between a fun learning curve, and a frustrating one. The problem I find with this is that it's more frustrating than fun.
+The spaces have to be navigated just right in order to make it through, and the restarting takes a hot min. Another thing is that the game starts right away, so the player is caught off guard, it doesn't lean into it like flappy bird which can make it hard for the player to learn.
+I would say that giving the player a little more space between the hands and a smooth transition into the gameplay would help the game a lot. Otherwise, it's more frustrating. If that's the intended mood, nobody wants to get frustrated. The player will just quit the game then.
+Lastly, give the player more room to fall, that will also help to prevent it from being so frustrating.
+Was there anything in the GDScript that was confusing to you? I don't believe so.
+If so, what? Nothing.
+Is it clear that every group member participated? I think so.
+Does the repository contain an appropriate LICENSE? Yes
+What is something the group could add to the README.md to make it more descriptive? I don't feel they need to add anything, they were pretty thorough.
+Pay a compliment to the group based on the quality of the game. Props for trying to do something new in the time provided. That is ambitious, and I do really love where you took the theme. I think it's hillarious and a fun idea (both just centering it around the beer and going to a flappy bird clone).
+Props, I think it has potential if you want to do any more with it.
+How many of your points would you allocate to this project? I say 20/20, because you tried, and it's very clear that you tried. When I give the feedback on frustrating games, it's just because I've made those before. I want to share some of what I know, but I do like the idea,
+it's clear that you all tried, and it's code is pretty tight. In short, awesome job, and once again, you guys could totally go further with it if you so desired. 

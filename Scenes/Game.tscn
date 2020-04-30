@@ -2,10 +2,10 @@
 
 [ext_resource path="res://Node2D.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Handtwo.png.png" type="Texture" id=2]
-[ext_resource path="res://Scripts/Floor.gd" type="Script" id=3]
+[ext_resource path="res://Assets/Limesheet.png" type="Texture" id=3]
 [ext_resource path="res://Assets/Mouth.png" type="Texture" id=4]
-[ext_resource path="res://Assets/Floor.png" type="Texture" id=5]
-[ext_resource path="res://Assets/Limesheet.png" type="Texture" id=6]
+[ext_resource path="res://Scripts/Floor.gd" type="Script" id=5]
+[ext_resource path="res://Assets/Floor.png" type="Texture" id=6]
 [ext_resource path="res://Assets/1920x1080-gold-metallic-solid-color-background.jpg" type="Texture" id=7]
 [ext_resource path="res://Scripts/background.gd" type="Script" id=8]
 [ext_resource path="res://Assets/BGM.wav" type="AudioStream" id=9]
@@ -13,22 +13,22 @@
 
 [sub_resource type="AtlasTexture" id=1]
 flags = 4
-atlas = ExtResource( 6 )
+atlas = ExtResource( 3 )
 region = Rect2( 0, 0, 256, 256 )
 
 [sub_resource type="AtlasTexture" id=2]
 flags = 4
-atlas = ExtResource( 6 )
+atlas = ExtResource( 3 )
 region = Rect2( 256, 256, 256, 256 )
 
 [sub_resource type="AtlasTexture" id=3]
 flags = 4
-atlas = ExtResource( 6 )
+atlas = ExtResource( 3 )
 region = Rect2( 0, 256, 256, 256 )
 
 [sub_resource type="AtlasTexture" id=4]
 flags = 4
-atlas = ExtResource( 6 )
+atlas = ExtResource( 3 )
 region = Rect2( 256, 0, 256, 256 )
 
 [sub_resource type="SpriteFrames" id=5]
@@ -988,14 +988,14 @@ polygon = PoolVector2Array( -176, -382, -272, -380, -272, -383, -274, -506, -332
 
 [node name="Floor" type="KinematicBody2D" parent="Floor"]
 position = Vector2( 7.40247, 612.734 )
-script = ExtResource( 3 )
+script = ExtResource( 5 )
 __meta__ = {
 "_edit_group_": true
 }
 
 [node name="Sprite" type="Sprite" parent="Floor/Floor"]
 scale = Vector2( 50, 1 )
-texture = ExtResource( 5 )
+texture = ExtResource( 6 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Floor/Floor"]
 position = Vector2( 0, -2 )
@@ -1004,14 +1004,14 @@ polygon = PoolVector2Array( 1500, 36, -1500, 36, -1500, -36, 1500, -36 )
 
 [node name="Floor2" type="KinematicBody2D" parent="Floor"]
 position = Vector2( -3.70129, -41.0333 )
-script = ExtResource( 3 )
+script = ExtResource( 5 )
 __meta__ = {
 "_edit_group_": true
 }
 
 [node name="Sprite" type="Sprite" parent="Floor/Floor2"]
 scale = Vector2( 50, 1 )
-texture = ExtResource( 5 )
+texture = ExtResource( 6 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Floor/Floor2"]
 scale = Vector2( 50, 1 )
