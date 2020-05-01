@@ -1,0 +1,64 @@
+Name: Ricardo Aguilar 
+Date: May 1st 2020 
+
+Project: Coronal Final 
+Group's repository: https://github.com/garytbaker/CoronaFinal
+
+
+
+What is something you learned by reviewing this group's project?
+
+I like the game feel of it making you want to keep trying. The movement isn't easy to control and somehow your meant to feel like you can do it. 
+
+ 
+
+In what ways does this game reflect the theme?
+They just used Corona the beer as the game trying to dodge hand and collect limes along the way 
+
+ 
+
+What is something you saw in this group's project that you would like to apply to your own future games?
+
+I like how you gain point once the character flies over the hand. I'm guess the maybe used a raycast or soemthing to track it, but I like the idea of that tracking system.
+ 
+
+What suggestions would you have for this group to improve the game? 
+
+I think a better background, maybe a moving one or slowly moving so we get a sense of movement better rather than it being static. 
+
+ 
+
+Was there anything in the GDScript that was confusing to you? If so, what?
+Most of it was pretty confusing but that because It's hard for me to understand all of it, that doesn't mean that it's wrong in any way, I'm just not as qualified to speak about it. 
+ 
+
+
+ 
+
+Is it clear that every group member participated?
+Yes the repository said 4 people had contributed to the game
+
+ 
+
+Does the repository contain an appropriate LICENSE?
+
+Yes
+
+ 
+
+What is something the group could add to the README.md to make it more descriptive?
+
+I think they provided a well description of their game but the game alone says it all.
+
+ 
+
+Pay a compliment to the group based on the quality of the game.
+
+I think it's really fun, I spent a good 10 minutes trying to get as far as I could.
+
+
+
+How many of your points would you allocate to this project?
+3
+
+
