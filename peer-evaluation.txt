@@ -1,0 +1,47 @@
+Name: Lawren Elderkin
+Date: 5/1/2020
+
+Project: Tipsy Productions
+Group's repository: https://github.com/garytbaker/CoronaFinal/
+
+
+
+What is something you learned by reviewing this group's project?
+
+	Most college students aren't concerned about the pandemic, they're more concerned about the beer. LOL. 
+
+In what ways does this game reflect the theme?
+
+	It's based off the beer, Corona.
+
+What is something you saw in this group's project that you would like to apply to your own future games?
+
+	I really liked how pixelated the beer was - this would be nice for a really cartoonish game. 
+
+What suggestions would you have for this group to improve the game?
+
+	Maybe for the hands to be a bit smaller.
+
+Was there anything in the GDScript that was confusing to you? If so, what?
+
+	Not really, I think it all made sense. 
+
+Is it clear that every group member participated?
+
+	Yes. 
+ 
+Does the repository contain an appropriate LICENSE?
+
+	Yes. 
+
+What is something the group could add to the README.md to make it more descriptive?
+
+	I think it had everything it needed to be successful!
+
+Pay a compliment to the group based on the quality of the game.
+
+	This game is super hilarious - I would definitely recommend it!
+
+How many of your points would you allocate to this project?
+
+	3.
