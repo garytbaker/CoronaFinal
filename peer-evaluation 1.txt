@@ -1,0 +1,70 @@
+Name: Nick Manes
+Date: 5/2/2020
+
+Project: Flappy Beer by Tipsy Productions
+Group's repository: https://github.com/garytbaker/CoronaFinal
+
+
+
+What is something you learned by reviewing this group's project?
+
+* i'm personally reminded of how much I suck at Flappy Bird-esque games, that's one thing. but in all seriousness, this game's creative idea and concept proves just how anyone can make an awesome game out of anything. like... I never would have thought about college students mostly thinking about beer or alcohol during the virus. 
+ 
+
+
+
+In what ways does this game reflect the theme?
+
+ * like what the README states, it's about what's on the mind of college students. an ice cold beer with a little (or a lot) of lime in it. i mean yeah, some kids would be panicking, but others may just be wanting to drink the pandemic away. there's definitely time to do that now.
+
+
+
+
+What is something you saw in this group's project that you would like to apply to your own future games?
+
+* the brilliant feature of being able to use other controllers, such as an XBOX controller.
+ 
+
+
+
+What suggestions would you have for this group to improve the game?
+
+* like I said, I suck at Flappy Bird-like games and so I kept dying quickly, maybe reduce the size of the hands or how high you get propelled when you click the button.
+ 
+
+
+
+Was there anything in the GDScript that was confusing to you? If so, what?
+
+* i mean i suck at programming, i'm an artist, so it was all pretty confusing. whatever they did that lets other controllers be usable is really beyond me.
+ 
+
+
+Is it clear that every group member participated?
+
+* of course. it seems like lots of effort went into the sounds, the graphics, and menu design. really, everything was made nicely.
+
+
+
+Does the repository contain an appropriate LICENSE?
+
+* yessir, it does.
+
+
+
+What is something the group could add to the README.md to make it more descriptive?
+
+* can't really think of anything- maybe talk about how you guys organized everything together? how long the project took you overall, and if any inspirations were drawn from other games or ideas?
+ 
+
+
+Pay a compliment to the group based on the quality of the game.
+
+*i think your game is extremely creative and almost follows a "sub-theme" of the coronavirus theme. how people will react to it.
+	the game is solid with it's concept and mechanics, and I love the work that went into the catchy music and sounds.
+
+
+
+How many of your points would you allocate to this project?
+
+* overall, i'd give this a solid 4 out of 5 points.
