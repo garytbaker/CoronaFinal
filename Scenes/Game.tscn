@@ -1,34 +1,33 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://Node2D.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Handtwo.png.png" type="Texture" id=2]
-[ext_resource path="res://Scripts/Floor.gd" type="Script" id=3]
+[ext_resource path="res://Assets/Limesheet.png" type="Texture" id=3]
 [ext_resource path="res://Assets/Mouth.png" type="Texture" id=4]
-[ext_resource path="res://Assets/Floor.png" type="Texture" id=5]
-[ext_resource path="res://Assets/Limesheet.png" type="Texture" id=6]
-[ext_resource path="res://Assets/1920x1080-gold-metallic-solid-color-background.jpg" type="Texture" id=7]
+[ext_resource path="res://Scripts/Floor.gd" type="Script" id=5]
+[ext_resource path="res://Assets/Floor.png" type="Texture" id=6]
+[ext_resource path="res://Assets/download.jpg" type="Texture" id=7]
 [ext_resource path="res://Scripts/background.gd" type="Script" id=8]
-[ext_resource path="res://Assets/BGM.wav" type="AudioStream" id=9]
-[ext_resource path="res://Scripts/AudioStreamPlayer.gd" type="Script" id=10]
+[ext_resource path="res://Scenes/AudioStreamPlayer.gd" type="Script" id=9]
 
 [sub_resource type="AtlasTexture" id=1]
 flags = 4
-atlas = ExtResource( 6 )
+atlas = ExtResource( 3 )
 region = Rect2( 0, 0, 256, 256 )
 
 [sub_resource type="AtlasTexture" id=2]
 flags = 4
-atlas = ExtResource( 6 )
+atlas = ExtResource( 3 )
 region = Rect2( 256, 256, 256, 256 )
 
 [sub_resource type="AtlasTexture" id=3]
 flags = 4
-atlas = ExtResource( 6 )
+atlas = ExtResource( 3 )
 region = Rect2( 0, 256, 256, 256 )
 
 [sub_resource type="AtlasTexture" id=4]
 flags = 4
-atlas = ExtResource( 6 )
+atlas = ExtResource( 3 )
 region = Rect2( 256, 0, 256, 256 )
 
 [sub_resource type="SpriteFrames" id=5]
@@ -46,6 +45,7 @@ position = Vector2( 0, -4 )
 script = ExtResource( 1 )
 
 [node name="Hands" type="Node2D" parent="."]
+editor/display_folded = true
 
 [node name="Hand2" type="StaticBody2D" parent="Hands"]
 position = Vector2( 838.545, 473.284 )
@@ -611,6 +611,7 @@ scale = Vector2( 0.22, 0.22 )
 polygon = PoolVector2Array( 44, -319.4, 45.4, -316, 48.8, -316, 52, -312.8, 52, -310, 54.8, -310, 58, -306.8, 58, -304, 60.8, -304, 64, -300.8, 64, -298, 66.8, -298, 70, -294.8, 70, -286, 74, -286, 74, -283.4, 75.4, -280, 78.8, -280, 82, -276.8, 82, -274, 84.8, -274, 88, -270.8, 88, -255.4, 94, -253.4, 94, -218, 94.6, -218, 98, -219.4, 98, -222.8, 101.2, -226, 104, -226, 104, -228.8, 107.2, -232, 110, -232, 110, -234.8, 113.2, -238, 164, -238, 164, -235.4, 165.4, -232, 168.8, -232, 172, -228.8, 172, -226, 174.8, -226, 178, -222.8, 178, -220, 180.8, -220, 184, -216.8, 184, -214, 186.8, -214, 190, -210.8, 190, -202, 193.4, -202, 195.4, -196, 198.8, -196, 202, -192.8, 202, -190, 204.8, -190, 208, -186.8, 208, -171.4, 214, -169.4, 214, -122, 214.6, -122, 218, -123.4, 218, -126.8, 221.2, -130, 224, -130, 224, -132.8, 227.2, -136, 230, -136, 230, -138.8, 233.2, -142, 284, -142, 284, -139.4, 285.4, -136, 288.8, -136, 292, -132.8, 292, -130, 294.8, -130, 298, -126.8, 298, -124, 300.8, -124, 304, -120.8, 304, -118, 306.8, -118, 310, -114.8, 310, -106, 313.4, -106, 315.4, -100, 318.8, -100, 322, -96.8, 322, -94, 324.8, -94, 328, -90.8, 328, -75.4, 334, -73.4, 334, 656, 331.5, 656, 328, 657.4, 328, 673.4, 322, 675.4, 322, 686, 319.5, 686, 316, 687.4, 316, 690.8, 312.8, 694, 310, 694, 310, 710, 307.5, 710, 304, 711.4, 304, 714.8, 300.8, 718, 298, 718, 298, 734, 295.5, 734, 292, 735.4, 292, 738.8, 288.8, 742, 286, 742, 286, 758, 283.5, 758, 280, 759.4, 280, 969.4, 280.9, 968, 288.8, 968, 292, 971.2, 292, 1002.8, 288.8, 1006, 279.4, 1006, 277.4, 1012, 250, 1012, 250, 1014.8, 246.8, 1018, 129.4, 1018, 127.4, 1024, 64, 1024, 64, 1032.8, 60.8, 1036, 16, 1036, 16, 1033.5, 14.6, 1030, -2, 1030, -2, 1027.5, -3.40002, 1024, -26, 1024, -26, 1021.5, -27.4, 1018, -80, 1018, -80, 1015.5, -81.4, 1012, -98, 1012, -98, 1009.5, -99.4, 1006, -116, 1006, -116, 1003.5, -117.4, 1000, -120.8, 1000, -124, 996.8, -124, 994, -138.8, 994, -142, 990.8, -142, 759.4, -148, 757.4, -148, 742, -151.4, 742, -153.4, 736, -156.8, 736, -160, 732.8, -160, 718, -163.4, 718, -165.4, 712, -168.8, 712, -172, 708.8, -172, 694, -175.4, 694, -177.4, 688, -180.8, 688, -184, 684.8, -184, 676, -186.8, 676, -190, 672.8, -190, 664, -193.4, 664, -195.4, 658, -198.8, 658, -202, 654.8, -202, 645.4, -208, 643.4, -208, 634, -210.8, 634, -214, 630.8, -214, 622, -217.4, 622, -219.4, 616, -222.8, 616, -226, 612.8, -226, 603.4, -232, 601.4, -232, 592, -234.8, 592, -238, 588.8, -238, 580, -240.8, 580, -244, 576.8, -244, 568, -247.4, 568, -249.4, 562, -252.8, 562, -256, 558.8, -256, 549.4, -262, 547.4, -262, 538, -264.8, 538, -268, 534.8, -268, 526, -271.4, 526, -273.4, 520, -276.8, 520, -280, 516.8, -280, 507.4, -286, 505.4, -286, 496, -288.8, 496, -292, 492.8, -292, 484, -294.8, 484, -298, 480.8, -298, 76, -295.4, 76, -292, 74.6, -292, 58, -289.4, 58, -286, 56.6, -286, 53.2, -282.8, 50, -280, 50, -280, 47.2, -276.8, 44, -274, 44, -274, 34.6, -268, 32.6, -268, 29.2, -264.8, 26, -262, 26, -262, 23.2, -258.8, 20, -256, 20, -256, 17.2, -252.8, 14, -250, 14, -250, 11.2, -246.8, 8, -196.6, 8, -194.6, 14, -190.6, 14, -188.6, 20, -184.6, 20, -182.6, 26, -178.9, 26, -178, 27.4, -178, -169.4, -172, -171.4, -172, -188, -169.4, -188, -166, -189.4, -166, -192.8, -162.8, -196, -160, -196, -160, -198.8, -156.8, -202, -154, -202, -154, -211.4, -148, -213.4, -148, -216.8, -144.8, -220, -142, -220, -142, -222.8, -138.8, -226, -136, -226, -136, -228.8, -132.8, -232, -130, -232, -130, -234.8, -126.8, -238, -76.6, -238, -74.6, -232, -70.6, -232, -68.6, -226, -64.6, -226, -62.6, -220, -58.9, -220, -58, -218.6, -58, -253.4, -52, -255.4, -52, -272, -49.4, -272, -46, -273.4, -46, -276.8, -42.8, -280, -40, -280, -40, -282.8, -36.8, -286, -34, -286, -34, -295.4, -28, -297.4, -28, -301.4, -22, -303.4, -22, -307.4, -16, -309.4, -16, -313.4, -10, -315.4, -10, -319.2, -8, -320.2, -8, -322, 44, -322 )
 
 [node name="Limes" type="Node2D" parent="."]
+editor/display_folded = true
 
 [node name="Lime" type="StaticBody2D" parent="Limes"]
 position = Vector2( 388.968, 319.112 )
@@ -623,7 +624,6 @@ __meta__ = {
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Limes/Lime"]
 scale = Vector2( 0.3, 0.3 )
 frames = SubResource( 5 )
-frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Limes/Lime"]
@@ -641,7 +641,6 @@ __meta__ = {
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Limes/Lime2"]
 scale = Vector2( 0.3, 0.3 )
 frames = SubResource( 5 )
-frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Limes/Lime2"]
@@ -659,7 +658,6 @@ __meta__ = {
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Limes/Lime3"]
 scale = Vector2( 0.3, 0.3 )
 frames = SubResource( 5 )
-frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Limes/Lime3"]
@@ -677,6 +675,7 @@ __meta__ = {
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Limes/Lime10"]
 scale = Vector2( 0.3, 0.3 )
 frames = SubResource( 5 )
+frame = 3
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Limes/Lime10"]
@@ -694,6 +693,7 @@ __meta__ = {
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Limes/Lime11"]
 scale = Vector2( 0.3, 0.3 )
 frames = SubResource( 5 )
+frame = 3
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Limes/Lime11"]
@@ -711,6 +711,7 @@ __meta__ = {
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Limes/Lime15"]
 scale = Vector2( 0.3, 0.3 )
 frames = SubResource( 5 )
+frame = 3
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Limes/Lime15"]
@@ -728,7 +729,7 @@ __meta__ = {
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Limes/Lime17"]
 scale = Vector2( 0.3, 0.3 )
 frames = SubResource( 5 )
-frame = 3
+frame = 2
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Limes/Lime17"]
@@ -746,7 +747,7 @@ __meta__ = {
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Limes/Lime19"]
 scale = Vector2( 0.3, 0.3 )
 frames = SubResource( 5 )
-frame = 3
+frame = 2
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Limes/Lime19"]
@@ -764,6 +765,7 @@ __meta__ = {
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Limes/Lime14"]
 scale = Vector2( 0.3, 0.3 )
 frames = SubResource( 5 )
+frame = 3
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Limes/Lime14"]
@@ -781,6 +783,7 @@ __meta__ = {
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Limes/Lime9"]
 scale = Vector2( 0.3, 0.3 )
 frames = SubResource( 5 )
+frame = 3
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Limes/Lime9"]
@@ -798,7 +801,6 @@ __meta__ = {
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Limes/Lime4"]
 scale = Vector2( 0.3, 0.3 )
 frames = SubResource( 5 )
-frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Limes/Lime4"]
@@ -816,6 +818,7 @@ __meta__ = {
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Limes/Lime5"]
 scale = Vector2( 0.3, 0.3 )
 frames = SubResource( 5 )
+frame = 3
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Limes/Lime5"]
@@ -833,6 +836,7 @@ __meta__ = {
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Limes/Lime6"]
 scale = Vector2( 0.3, 0.3 )
 frames = SubResource( 5 )
+frame = 3
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Limes/Lime6"]
@@ -850,7 +854,7 @@ __meta__ = {
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Limes/Lime7"]
 scale = Vector2( 0.3, 0.3 )
 frames = SubResource( 5 )
-frame = 3
+frame = 2
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Limes/Lime7"]
@@ -868,7 +872,7 @@ __meta__ = {
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Limes/Lime12"]
 scale = Vector2( 0.3, 0.3 )
 frames = SubResource( 5 )
-frame = 2
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Limes/Lime12"]
@@ -886,7 +890,7 @@ __meta__ = {
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Limes/Lime13"]
 scale = Vector2( 0.3, 0.3 )
 frames = SubResource( 5 )
-frame = 2
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Limes/Lime13"]
@@ -904,7 +908,6 @@ __meta__ = {
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Limes/Lime16"]
 scale = Vector2( 0.3, 0.3 )
 frames = SubResource( 5 )
-frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Limes/Lime16"]
@@ -922,7 +925,6 @@ __meta__ = {
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Limes/Lime20"]
 scale = Vector2( 0.3, 0.3 )
 frames = SubResource( 5 )
-frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Limes/Lime20"]
@@ -940,7 +942,6 @@ __meta__ = {
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Limes/Lime18"]
 scale = Vector2( 0.3, 0.3 )
 frames = SubResource( 5 )
-frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Limes/Lime18"]
@@ -958,7 +959,7 @@ __meta__ = {
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Limes/Lime8"]
 scale = Vector2( 0.3, 0.3 )
 frames = SubResource( 5 )
-frame = 2
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Limes/Lime8"]
@@ -966,6 +967,7 @@ scale = Vector2( 2, 4 )
 shape = SubResource( 6 )
 
 [node name="Mouth" type="Node2D" parent="."]
+editor/display_folded = true
 position = Vector2( 865.198, -1.36038 )
 
 [node name="Mouth" type="StaticBody2D" parent="Mouth"]
@@ -985,17 +987,18 @@ scale = Vector2( 0.52, 0.52 )
 polygon = PoolVector2Array( -176, -382, -272, -380, -272, -383, -274, -506, -332, -506, -332, -556, 334, -554, 334, 548, -316, 548, -316, 502.1, -274, 500.1, -274, 377.2, -270.8, 374, -224, 374, -224, 373, -226.1, 334, -223, 334, 104, 332, 104, -380, 16, -380, 15, -435, 14, -380, -79.9, -380, -80, -382, -176, -380 )
 
 [node name="Floor" type="Node2D" parent="."]
+editor/display_folded = true
 
 [node name="Floor" type="KinematicBody2D" parent="Floor"]
 position = Vector2( 7.40247, 612.734 )
-script = ExtResource( 3 )
+script = ExtResource( 5 )
 __meta__ = {
 "_edit_group_": true
 }
 
 [node name="Sprite" type="Sprite" parent="Floor/Floor"]
 scale = Vector2( 50, 1 )
-texture = ExtResource( 5 )
+texture = ExtResource( 6 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Floor/Floor"]
 position = Vector2( 0, -2 )
@@ -1004,14 +1007,14 @@ polygon = PoolVector2Array( 1500, 36, -1500, 36, -1500, -36, 1500, -36 )
 
 [node name="Floor2" type="KinematicBody2D" parent="Floor"]
 position = Vector2( -3.70129, -41.0333 )
-script = ExtResource( 3 )
+script = ExtResource( 5 )
 __meta__ = {
 "_edit_group_": true
 }
 
 [node name="Sprite" type="Sprite" parent="Floor/Floor2"]
 scale = Vector2( 50, 1 )
-texture = ExtResource( 5 )
+texture = ExtResource( 6 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Floor/Floor2"]
 scale = Vector2( 50, 1 )
@@ -1030,15 +1033,12 @@ __meta__ = {
 }
 
 [node name="background" type="Sprite" parent="."]
-position = Vector2( 0, 290 )
-scale = Vector2( 0.684434, 0.684434 )
+position = Vector2( -93.1694, 352 )
+scale = Vector2( 5.25274, 5.25274 )
 z_index = -100
 z_as_relative = false
 texture = ExtResource( 7 )
 script = ExtResource( 8 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 9 )
-volume_db = -5.0
-autoplay = true
-script = ExtResource( 10 )
+script = ExtResource( 9 )
